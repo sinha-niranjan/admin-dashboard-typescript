@@ -1,0 +1,42 @@
+{
+  "categories": [
+    {
+      "value": 40,
+      "heading": "Laptops"
+    },
+    {
+      "value": 100,
+      "heading": "Shoes"
+    },
+    {
+      "value": 80,
+      "heading": "Camera"
+    },
+    {
+      "value": 60,
+      "heading": "Jeans"
+    }
+  ],
+  "transaction": [
+    {
+      "id": "doisdfhs",
+      "amount": 4000,
+      "quantity": 4,
+      "discount": 300,
+      "status": "Processing"
+    },
+    {
+        "id":"sfsdfjsdf",
+        "amount":5100,
+        "quantity": 2,
+        "discount": 900,
+        "status":"Processing"
+    },{
+      "id":"dfjsdfjsd",
+      "amount":34545,
+      "quantity": 34,
+      "discount":300,
+      "status":"Shipped"
+    }
+  ]
+}
