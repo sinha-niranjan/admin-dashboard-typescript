@@ -38,6 +38,7 @@ function TableHOC<T extends object>(
       canPreviousPage,
       pageCount,
       state: { pageIndex },
+      gotoPage,
     } = useTable(options, useSortBy, usePagination);
 
     return (
@@ -80,9 +81,20 @@ function TableHOC<T extends object>(
         </table>
         {showPagination && (
           <div className="table-pagination">
-            {canPreviousPage && <button onClick={previousPage}>Prev</button>}
+            {canPreviousPage && (
+              <>
+                <button onClick={() => gotoPage(0)}>First</button>
+                <button onClick={previousPage}>Prev</button>
+              </>
+            )}
+
             <span>{` ${pageIndex + 1} of ${pageCount} `} </span>
-            {canNextPage && <button onClick={nextPage}>Next</button>}
+            {canNextPage && (
+              <>
+                <button onClick={nextPage}>Next</button>
+                <button onClick={() => gotoPage(pageCount-1)}>Last</button>
+              </>
+            )}
           </div>
         )}
       </div>
