@@ -9,7 +9,7 @@
 Clone the project
 
 ```bash
-  git clone https://github.com/sinha-niranjan/admin-dashboard-typescript.git)
+  git clone https://github.com/sinha-niranjan/admin-dashboard-typescript.git
 ```
 
 Go to the project directory
@@ -33,7 +33,7 @@ Install dependencies
 
 ## Authors
 
-- [@sinha-niranjan](https://www.github.com/octokatherine)
+- [@sinha-niranjan](https://www.github.com/sinha-niranjan)
 
 
 ## Tech Stack
