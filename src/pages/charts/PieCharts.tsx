@@ -7,7 +7,7 @@ const PieCharts = () => {
     <div className="adminContainer">
       <AdminSidebar />
       <main className="chart-container">
-        <h1>Pie & Dougnut Charts</h1>
+        <h1>Pie & Doughnut Charts</h1>
         <section>
           <div>
             <PieChart
@@ -60,14 +60,44 @@ const PieCharts = () => {
                 "Productin Cost",
                 "Net Margin",
               ]}
-              data={[40, 20]}
-              backgroundColor={["hsl(269,80%,40%)", "rgb(53,162,255)"]}
+              data={[32, 18, 5, 40, 20]}
+              backgroundColor={[
+                "hsl(269,80%,40%)",
+                "hsl(19,80%,40%)",
+                "hsl(69,80%,40%)",
+                "hsl(300,80%,40%)",
+                "hsl(53,80%,40%)",
+              ]}
               legends={false}
-              offset={[0, 80]}
-              cutout={"70%"}
+              offset={[20, 30, 20, 30, 80]}
             />
           </div>
-          <h2> Stock Availability </h2>
+          <h2> Revenue Distribution </h2>
+        </section>
+        <section>
+          <div>
+            <PieChart
+              labels={["Teenager(Below 20)", "Adult(20-40)", "Older(above40)"]}
+              data={[30, 250, 70]}
+              backgroundColor={[
+                `hsl(10,80%,80%)`,
+                `hsl(10,80%,50%)`,
+                `hsl(10,40%,50%)`,
+              ]}
+              offset={[0, 0, 50]}
+            />
+          </div>
+          <h2> Users age groups </h2>
+        </section>
+        <section>
+          <div>
+            <DoughnutChart
+              labels={["Admin", "Customers"]}
+              data={[40, 250]}
+              backgroundColor={["hsl(335,100%,40%)", "hsl(44,98%,50%)"]}
+              offset={[0, 80]}
+            />
+          </div>
         </section>
       </main>
     </div>
