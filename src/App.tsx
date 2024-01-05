@@ -14,6 +14,9 @@ const ProductManagment = lazy(
 const TransactionManagment = lazy(
   () => import("./pages/managment/TransactionManagment")
 );
+const BarCharts = lazy(() => import("./pages/charts/BarCharts"));
+const PieCharts = lazy(() => import("./pages/charts/PieCharts"));
+const LineCharts = lazy(() => import("./pages/charts/LineCharts"));
 
 const App = () => {
   return (
@@ -28,6 +31,9 @@ const App = () => {
           {/* Charts  */}
 
           {/* Apps  */}
+          <Route path="/admin/chart/bar" element={<BarCharts />} />
+          <Route path="/admin/chart/pie" element={<PieCharts />} />
+          <Route path="/admin/chart/line" element={<LineCharts />} />
 
           {/* Managment  */}
           <Route path="/admin/product/new" element={<NewProduct />} />
