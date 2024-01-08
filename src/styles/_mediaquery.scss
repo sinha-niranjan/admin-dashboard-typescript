@@ -1,10 +1,10 @@
 @media screen and (width<= 1200px) {
-    .admincontainer {
+    .adminContainer {
       overflow: auto;
     }
-  
+     
     .dashboard {
-      .widget-container,
+      .widgetContainer,
       .graph-container,
       .transaction-container {
         justify-content: center;
